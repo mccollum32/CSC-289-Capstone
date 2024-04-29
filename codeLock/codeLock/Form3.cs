@@ -22,7 +22,8 @@ namespace codeLock
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //This function exits the entire program
+            Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)

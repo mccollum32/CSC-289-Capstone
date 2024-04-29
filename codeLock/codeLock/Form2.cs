@@ -28,7 +28,7 @@ namespace codeLock
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace codeLock
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Invalid.", "Incomplete Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Invalid.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             
@@ -87,7 +87,7 @@ namespace codeLock
                     }
                     else
                     {
-                        MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (Exception ex)
@@ -105,5 +105,21 @@ namespace codeLock
             this.Hide();
             home.ShowDialog();
         }
+
+
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                passText.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                passText.UseSystemPasswordChar = true;
+            }
+        }
+
+
     }
 }

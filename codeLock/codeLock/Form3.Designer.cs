@@ -44,7 +44,7 @@ namespace codeLock
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Location = new System.Drawing.Point(12, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 40);
             this.button1.TabIndex = 0;
@@ -68,7 +68,7 @@ namespace codeLock
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.button3.Location = new System.Drawing.Point(89, 3);
+            this.button3.Location = new System.Drawing.Point(400, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 40);
             this.button3.TabIndex = 4;
